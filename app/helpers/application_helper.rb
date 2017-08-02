@@ -26,7 +26,7 @@ module ApplicationHelper
         title: 'Home'
       },
       {
-        url: about_me_path,
+        url: about_path,
         title: 'About Me'
       },
       {
