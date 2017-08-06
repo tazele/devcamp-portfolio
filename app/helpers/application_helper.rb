@@ -15,8 +15,9 @@ module ApplicationHelper
       content_tag(:p, greeting, class: "source-greeting")
     end
   end
+
   def copyright_generator
-    DevcampViewTool::Renderer.copyright 'Anastasia Armstrong', 'All rights reserved'
+    DevcampViewTool::Renderer.copyright 'Jordan Hudgens', 'All rights reserved'
   end
 
   def nav_items
