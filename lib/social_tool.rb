@@ -12,7 +12,3 @@ module SocialTool
     end
   end
 end
-TWITTER_CONSUMER_KEY=asdfsdfasdf
-TWITTER_CONSUMER_SECRET=asdfsasdf
-TWITTER_ACCESS_TOKEN=asdfsdasdfas
-TWITTER_ACCESS_SECRET=asdfsdfas
