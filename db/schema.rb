@@ -27,14 +27,14 @@ ActiveRecord::Schema.define(version: 20170808225004) do
     t.index ["topic_id"], name: "index_blogs_on_topic_id", using: :btree
   end
 
-  create_table "commetns", force: :cascade do |t|
+  create_table "comments", force: :cascade do |t|
     t.text     "content"
     t.integer  "user_id"
     t.integer  "blog_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["blog_id"], name: "index_commetns_on_blog_id", using: :btree
-    t.index ["user_id"], name: "index_commetns_on_user_id", using: :btree
+    t.index ["blog_id"], name: "index_comments_on_blog_id", using: :btree
+    t.index ["user_id"], name: "index_comments_on_user_id", using: :btree
   end
 
   create_table "friendly_id_slugs", force: :cascade do |t|
@@ -102,6 +102,6 @@ ActiveRecord::Schema.define(version: 20170808225004) do
   end
 
   add_foreign_key "blogs", "topics"
-  add_foreign_key "commetns", "blogs"
-  add_foreign_key "commetns", "users"
+  add_foreign_key "comments", "blogs"
+  add_foreign_key "comments", "users"
 end
