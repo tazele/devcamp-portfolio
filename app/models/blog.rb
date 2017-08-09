@@ -7,7 +7,7 @@ class Blog < ApplicationRecord
 
   belongs_to :topic
   
-  has_many :comments, dependent: :destroy
+  has_many :comment, dependent: :destroy
 
   def self.special_blogs
     all
